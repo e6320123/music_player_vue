@@ -86,33 +86,50 @@ export default {
 
 
 <style scoped>
-*{
+
+* {
   list-style-type: none;
 }
-.container{
+
+.container {
   box-shadow: 7px 7px 10px 1px #2F2E3C;
   border-radius: 10px;
+  margin: 20px 20px 20px 0;
 }
-.playlist{
+
+@media screen and (max-width:1056px) {
+
+  .container {
+    margin:20px;
+    margin: 0 20px 20px 20px;
+  }
+
+}
+
+.playlist {
   background-color: #3B3F4A;
   box-sizing: border-box;
   padding: 10px;
   border-radius: 10px;
 }
-.playlist li{
+
+.playlist li {
     background-color: #3B3F4A;
     padding: 5px;
     transition: all 0.3s ease;
     margin: 5px 0;
     padding: 10px;
 }
-.playlist li:hover{
+
+.playlist li:hover {
     background-color: #dddddd;
     color: black;
     cursor: pointer;
 }
-.playlist .hover{
+
+.playlist .hover {
     background-color: #dddddd;
     color: black;
 }
+
 </style>

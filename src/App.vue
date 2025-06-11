@@ -32,26 +32,51 @@ export default {
 </script>
 
 <style scoped>
-.app-container{
-  /* border: 4px solid blue; */
-  width: 1056px;
+
+.app-container {
+  /* border: 4px solid blue;  */
+  width: 1056px; 
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding: 20px;
+  /* margin: 0 30px; */
 }
-.mainpanel{
+
+.mainpanel {
   float: left;
   width: 50%;
 }
-.playlist{
+
+.playlist {
   float: left;
   width: 50%;
   color: aliceblue;
-} 
+}
 
+@media screen and (max-width:1056px) {
+  .app-container {
+    width: 100%;
+    overflow: scroll; 
+    position: relative; 
+    transform: none;
+    top: 0;
+    left: 0;
+}
+
+  .mainpanel {
+    float: none;
+    width: 100%;
+  }
+
+  .playlist {
+    float: none;
+    width: 100%;
+    color: aliceblue;
+  } 
+
+}
 
 
 </style>
